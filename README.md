@@ -11,6 +11,6 @@
 
 产出到 build 文件夹
 
-## yarn run analyze
+##  `yarn run analyze`
 
 产出到 dist 文件夹
