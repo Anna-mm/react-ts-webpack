@@ -1,0 +1,59 @@
+// 全部元素采用 border-box 内容布局
+/* stylelint-disable selector-max-universal */
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+// 所有元素不出现 outline 效果（外层 focus 效果）
+*:focus {
+    outline: none;
+}
+
+// 自动填充最大高度
+html, body {
+    height: 100%;
+}
+
+// 全局字体、背景色、前景色、行高（暂时）、响应式等
+body {
+    font-family: @font-family-base;
+    font-size: @font-size-base;
+    color: @text-color;
+    background-color: @body-bg;
+    min-width: @screen-width-xs;
+    max-width: @screen-width-xl;
+    margin: 0 auto !important;
+}
+
+// 表格基础样式覆盖
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// 列表间距样式
+ul, ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+// 链接相关样式
+a {
+    &,
+    &:link,
+    &:active,
+    &:visited {
+        color: @gray;
+    }
+
+    &:hover {
+        color: @gray-dark;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+}

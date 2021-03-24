@@ -1,0 +1,103 @@
+// 全局颜色
+@global-primary: #3D88F2;
+@global-success: #5BC49F;
+@global-info: #9954BB;
+@global-warning: #fca63b;
+@global-danger: #FF5B5B;
+@global-light: #edf1f2;
+@sort-hover-gray: #3689ff;
+@white: #fff;
+
+@global-primary-light: #86B6FF;
+
+// 全局灰色
+@gray-base: #000;
+@gray-darker: lighten(@gray-base, 13.5%);           // #222
+@gray-dark: lighten(@gray-base, 20%);               // #333
+@gray: #666;                                      // #666
+@gray-light: lighten(@gray-base, 60%);              // #999
+@gray-lighter: #f7f7f7;
+
+// 背景色
+@body-bg: #F6F7FA;
+
+// 默认字体
+@font-family-base: 'PingFang SC', STHeiti, 'Helvetica Neue', Verdana,
+    'Microsoft YaHei', SimHei, Arial, Verdana, sans-serif;
+// 导航字体
+@font-family-header: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,
+    Helvetica Neue,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,sans-serif!important;
+// 字体大小
+@font-size-base: 14px;
+@font-size-xs: ceil((@font-size-base * 0.85));      // ~12px
+@font-size-sm: ceil((@font-size-base * 1.12));      // ~16px
+@font-size-md: ceil((@font-size-base * 1.25));      // ~18px
+@font-size-lg: ceil((@font-size-base * 1.40));      // ~20px
+@font-size-xl: ceil((@font-size-base * 1.7));       // ~24px
+@font-size-h2: floor((@font-size-base * 2.15));     // ~30px
+@font-size-h1: floor((@font-size-base * 2.6));      // ~36px
+
+// 默认行高
+@line-height-base: 1.42857143;                      // 20/14
+
+// 默认边框颜色
+@border-color: #dbdbdb;
+
+// header高度
+@head-base-height: 64px;
+@head-max-height: 64px;
+
+@text-color: #58666e;
+
+// 侧边menu
+@app-sidebar-width: 0;
+@app-sidebar-bg: #f7f7f7;
+@app-header-height: 70px;
+@app-sidebar-zindex: 100;
+@app-sidebar-width-collapse: 60px;
+@menu-sidebar-height: 50px;
+@app-header-background: #5a9bff;
+@menu-sidebar-background: #e7e7e7;
+@menu-sidebar-background-active: #f7f7f7;
+@menu-sidebar-background-hover: #f1f1f1;
+
+// 按钮组默认高亮样式
+@nb-togglebutton-background-checked: #333;
+@nb-togglebutton-color-checked: #fff;
+
+// 间距
+@spacing-unit: 8px;
+@spacing-unit-xxs: @spacing-unit / 2;
+@spacing-unit-xs: @spacing-unit;
+@spacing-unit-s: @spacing-unit * 2;
+@spacing-unit-m: @spacing-unit * 3;
+@spacing-unit-l: @spacing-unit * 4;
+@spacing-unit-xl: @spacing-unit * 5;
+
+// 典型页面宽度 - 浏览器文档区宽度 （首页、列表页、人群定制页、新建表单页、报告页）
+@screen-width-xxs: 1192px; // 新建表单页、报告页（固定值）
+@screen-width-xs: 1262px; // 首页、人群定制页（最小宽度，1280-18，为滚动条预留18px宽度）
+@screen-width-s: 1366px; // 列表页（最小宽度）
+@screen-width-m: 1440px; // 首页（最大宽度）
+@screen-width-l: 1600px; // 列表页、人群定制页（最大宽度）
+@screen-width-xl: 1920px;
+
+// 典型页面宽度-内容宽度
+@content-width-xs: 1192px;  //  表单、详情页（固定值）
+@content-width-s: 1214px;   //  首页、列表（最小宽度）
+@content-width-l: 1272px;   //  首页、列表（最大宽度）
+
+// 侧边栏宽度
+@sidebar-width-s: 68px;
+@sidebar-width-m: 236px;
+@sidebar-width-l: 262px;
+
+// 交并差人群主题颜色
+@group-assemble-theme-group1: #60ACFC;
+@group-assemble-theme-group2: #63D5B1;
+@group-assemble-theme-group3: #FEB64D;
+
+// 留存人群主题色
+@full-chain-saved-group-main: #2975E5;
+// 流失人群主题色
+@full-chain-lost-group-main: #F06C52;

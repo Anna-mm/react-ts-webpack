@@ -1,0 +1,70 @@
+@import './variable.less';
+
+// 头部菜单，用户信息
+.app-header {
+    position: fixed;
+    min-width: @screen-width-xs;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+// 主模块
+.app-body {
+    width: 100%;
+    display: table;
+    padding-top: @head-max-height;
+
+    .app-container {
+        position: relative;
+        min-height: calc(100vh - 64px);
+        min-width: @screen-width-xs;
+        // overflow-x: auto;
+        padding: 24px 24px 64px;
+        margin-left: @app-sidebar-width;
+        background-color: @body-bg;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+}
+
+.app-error {
+    background: #fff;
+
+    .app-error-block {
+        width: 80%;
+        margin: 0 auto;
+        padding: 10% 0;
+
+        .app-error-img {
+            text-align: right;
+            padding-right: 50px;
+
+            img {
+                width: 350px;
+                height: 350px;
+            }
+        }
+
+        .app-error-msg {
+            margin-top: 8%;
+            padding-left: 50px;
+        }
+    }
+}
+
+
+.app-white-block {
+    background: #fff;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+    position: relative;
+    border-radius: 6px;
+    border-radius: 6px;
+}

@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types",
+      "src/@types"
+    ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "noImplicitAny": false,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "paths": {
+        "@share": ["src/share-module/index"],
+        "@share/*": ["src/share-module/index/*"],
+        "@core": ["src/core-module/index"],
+        "@core/*": ["src/core-module/index/*"],
+        "@feature": ["src/feature-module/index"],
+        "@feature/*": ["src/feature-module/index/*"],
+    }
+  },
+  "include": [
+    "src"
+  ]
+}
